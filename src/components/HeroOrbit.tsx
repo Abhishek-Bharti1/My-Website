@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react"
 
 
-export const HeroOrbit = ({children,size,rotation}:PropsWithChildren<{size:number;rotation:number}>) => {
+const HeroOrbit = ({children,size,rotation}:PropsWithChildren<{size:number;rotation:number}>) => {
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
     <div style={{
@@ -18,3 +18,5 @@ export const HeroOrbit = ({children,size,rotation}:PropsWithChildren<{size:numbe
   </div>
   )
 }
+
+export default HeroOrbit
